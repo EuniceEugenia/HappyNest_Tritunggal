@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyNest - Sleep Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Ensure full height */
+            margin: 0; /* Remove default margins */
+            font-family: 'Poppins', sans-serif;
+            background-color: #DFF2EB; /* Light background */
+            color: #4A628A; /* Dark text color */
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Stack elements vertically */
+            padding-top: 70px; /* Space for fixed navbar */
+        }
+        .navbar {
+            background-color: #B9E5E8; /* Navbar color */
+        }
+        .navbar-brand, .nav-link {
+            color: #4A628A;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #7AB2D3; /* Primary button color */
+            border: none; /* Remove border */
+        }
+        .btn-primary:hover {
+            background-color: #4A628A; /* Darker on hover */
+        }
+        footer {
+            background-color: #4A628A; /* Footer background color */
+            color: #ffffff; /* Footer text color */
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HappyNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../LandingPage/index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../LandingPage/index.html#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../Meditasi/index.html">Meditasi</a></li>
+                            <li><a class="dropdown-item" href="../HabitnMoodTracker/index.html">Habit & Mood Tracker</a></li>
+                            <li><a class="dropdown-item" href="../JurnalDigital/index.html">Jurnal Digital</a></li>
+                            <li><a class="dropdown-item" href="../SleepTracker/index.html">Sleep Tracker</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../LandingPage/index.html#contact">Contact</a></li>
+                </ul>
+                <a href="#subscribe" class="btn btn-subscribe">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sleep Tracker Section -->
+    <section id="sleep" class="py-5 text-center flex-grow-1">
+        <h1 class="mb-3">Pemantauan Kualitas Tidur</h1>
+        <p>Catat kualitas tidur Anda dan tingkatkan kesehatan tidur Anda.</p>
+        <button class="btn btn-primary">Mulai Pantau Tidur</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>© 2024 HappyNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

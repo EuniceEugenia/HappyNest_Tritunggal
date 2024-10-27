@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyNest - Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #DFF2EB;
+            color: #4A628A;
+            padding-top: 70px;
+        }
+        .navbar {
+            background-color: #B9E5E8;
+        }
+        .navbar-brand, .nav-link {
+            color: #4A628A;
+            font-weight: 600;
+        }
+        .btn-subscribe, .btn-card {
+            background-color: #7AB2D3;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-subscribe:hover, .btn-card:hover {
+            color: white;
+            background-color: #4A628A;
+        }
+        .hero {
+            background-color: #7AB2D3;
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .features {
+            padding: 60px 0;
+        }
+        .card {
+            border: none;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card-body {
+            background-color: #B9E5E8;
+            color: #4A628A;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: #4A628A;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" tabindex="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HappyNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../Meditasi/index.html">Meditasi</a></li>
+                            <li><a class="dropdown-item" href="../HabitnMoodTracker/index.html">Habit & Mood Tracker</a></li>
+                            <li><a class="dropdown-item" href="../JurnalDigital/index.html">Jurnal Digital</a></li>
+                            <li><a class="dropdown-item" href="../SleepTracker/index.html">Sleep Tracker</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="#subscribe" class="btn btn-subscribe">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="display-4">Welcome to HappyNest</h1>
+            <p class="lead">A platform dedicated to mental health and well-being.</p>
+            <a href="#features" class="btn btn-subscribe">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2>Our Features</h2>
+                <p>Explore the various features to help you track, relax, and improve your mental health journey.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Meditasi</h3>
+                            <p class="card-text">Mindfulness and meditation for relaxation.</p>
+                            <a href="../Meditasi/index.html" class="btn btn-card mt-3">Let's Go!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Habit & Mood Tracker</h3>
+                            <p class="card-text">Track your mood and habits daily.</p>
+                            <a href="../HabitnMoodTracker/index.html" class="btn btn-card mt-3">Let's Go!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Jurnal Digital</h3>
+                            <p class="card-text">Write and reflect on your daily experiences.</p>
+                            <a href="../JurnalDigital/index.html" class="btn btn-card mt-3">Let's Go!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Sleep Tracker</h3>
+                            <p class="card-text">Monitor and improve your sleep quality.</p>
+                            <a href="../SleepTracker/index.html" class="btn btn-card mt-3">Let's Go!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+            <a href="mailto:support@happynest.com" class="btn btn-subscribe">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>© 2024 HappyNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
